@@ -1,2 +1,2 @@
 # codewars
-bu repo da codewarsda ishlagan masalarimni yuklab boraman In shaa Alloh
+bu repoga codewarsda ishlagan masalarimni yuklab boraman In shaa Alloh

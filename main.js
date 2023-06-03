@@ -14,3 +14,11 @@ function maxProduct(a){
   }
 
 //   =======================
+
+// Testing 1-2-3(7kyu)
+
+function number(array){
+  return array.map((item, index)=> `${index + 1}: ${item}`)
+}
+
+// 
