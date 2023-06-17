@@ -34,5 +34,23 @@ function generateFibonacciNumbers() {
   }
 }
 
-generateFibonacciNumbers();
+// generateFibonacciNumbers();
 // fi();
+
+//Consonant value(6kyu) time
+function solve(s) {
+  let alb = "abcdefghijklmnopqrstuvwxyz";
+  let unli = "aeiou";
+  let arr = [];
+  let sum = 0;
+  for (let i in s) {
+    if (!unli.includes(s[i])) {
+      sum += alb.indexOf(s[i]) + 1;
+    } else {
+      arr.push(sum);
+      sum = 0;
+    }
+  }
+  if (sum !== 0) arr.push(sum);
+  return Math.max(...arr);
+}
