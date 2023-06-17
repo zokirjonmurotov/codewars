@@ -37,7 +37,7 @@ function generateFibonacciNumbers() {
 // generateFibonacciNumbers();
 // fi();
 
-//Consonant value(6kyu) time
+//Consonant value(6kyu)
 function solve(s) {
   let alb = "abcdefghijklmnopqrstuvwxyz";
   let unli = "aeiou";
@@ -54,3 +54,14 @@ function solve(s) {
   if (sum !== 0) arr.push(sum);
   return Math.max(...arr);
 }
+
+// All Star Code Challenge #15 (6kyu)
+function rotate(str) {
+  if (!str.length) return [];
+  let arr = [];
+  for (let i = 1; i < str.length; i++) arr.push(str.slice(i) + str.slice(0, i));
+  arr.push(str);
+  return arr;
+}
+
+console.log(rotate("Hello"));
