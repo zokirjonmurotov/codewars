@@ -64,4 +64,18 @@ function rotate(str) {
   return arr;
 }
 
-console.log(rotate("Hello"));
+// console.log(rotate("Hello"));
+
+// ====================== two sum(6kyu)======================
+
+
+function twoSum(numbers, target) {
+  for(let i=0; i<=numbers.length; i++){
+    for(let j=i; j<=numbers.length; j++){
+      if(numbers[i] + numbers[j+1] === target) return [i, j+1]
+    }
+  }
+  return [];
+}
+
+console.log(twoSum( [1, 2, 3], 4));
